@@ -1,4 +1,3 @@
-lunch-slides
-============
+# Chadev Lunch Slides
 
-A set of slides we use for lunches to plug our sponsors and other events
+A set of slides we use for lunches to plug our sponsors and other events.

@@ -1,0 +1,142 @@
+/************************
+* Fonts
+************************/
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+/************************
+* Global Variables
+************************/
+
+:root {
+  --global-font: 'Poppins', sans-serif;
+  --blue: #15A8DB;
+  --black: #1D1E1F;
+  --gray-med: #777879;
+}
+
+/************************
+* Highlight Color
+************************/
+
+::selection {
+  color: white;
+  background: var(--blue);
+}
+
+/************************
+* Typography
+************************/
+
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body {
+  font-family: var(--global-font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--global-font);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 .25em 0;
+  color: var(--black);
+}
+
+.reveal h1 { font-size: 100px; }
+.reveal h2 { font-size: 50px; }
+.reveal h3 { font-size: 25px; }
+.reveal h4 { font-size: 20px; }
+.reveal h5 { font-size: 16px; }
+
+.reveal .all-caps {
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--gray-med);
+}
+
+.reveal .m-0 {
+  margin: 0;
+}
+
+/************************
+* Panel Layout
+************************/
+
+.panel-layout {
+  --image-size: 200px;
+  --item-spacing: 80px;
+}
+
+.reveal section.panel-layout {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 100px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Header */
+.reveal .panel-header {
+  margin-top: -25px;
+}
+
+.reveal .panel-header__date {
+  margin-bottom: 25px;
+}
+
+/* List */
+.reveal .panel-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.reveal .panel-list__item {
+  position: relative;
+  margin-right: var(--item-spacing);
+}
+
+.reveal .panel-list__item:last-of-type {
+  margin-right: 0;
+}
+
+.reveal .plus-icon::before {
+  content: '';
+  position: absolute;
+  top: calc(var(--image-size) / 2 - 10px);
+  left: calc(-1 * var(--item-spacing) / 2 - 10px);
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='20px' height='20px' viewBox='0 0 20 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Concepts' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Panel-Slide-Concept' transform='translate(-1241.000000, -589.000000)' fill='%2315A8DB' fill-rule='nonzero'%3E%3Cpath d='M1253,597 L1261,597 L1261,601 L1253,601 L1253,609 L1249,609 L1249,601 L1241,601 L1241,597 L1249,597 L1249,589 L1253,589 L1253,597 Z' id='Plus-Icon'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.reveal .panel-list__img {
+  width: var(--image-size);
+  height: var(--image-size);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+.reveal .panel-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 75px -50px -50px 0;
+}
+
+.reveal .panel-footer__logo {
+  max-height: 125px;
+  margin-left: 25px;
+}
