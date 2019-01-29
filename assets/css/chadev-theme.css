@@ -138,7 +138,7 @@ body {
 /* Date List */
 .reveal .date-list__item {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: 2ch 1fr;
   grid-template-rows: min-content;
   grid-gap: 0 20px;
   grid-template-areas:
@@ -157,11 +157,6 @@ body {
 /* Past Event Modifier */
 .date-list__item--past {
   opacity: .5;
-}
-
-.date-list__item--past .date-list__title,
-.date-list__item--past .date-list__subhead {
-  text-decoration: line-through;
 }
 
 /* Current Event Modifier */
