@@ -91,8 +91,12 @@ body {
 }
 
 .reveal .sponsor-footer__logo {
-  max-width: 220px;
-  max-height: 120px;
+  max-width: 275px;
+  max-height: 125px;
+}
+
+.reveal .sponsor-footer__logo--wide {
+  max-width: 350px;
 }
 
 .reveal .sponsor-footer__logo-divider {
