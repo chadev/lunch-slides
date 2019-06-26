@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chadev - Coworking Days</title>
+
+    <!-- Reveal CSS -->
+    <link rel="stylesheet" href="../assets/css/vendor/reveal.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../assets/css/vendor/zenburn.css">
+
+    <!-- Custom Chadev Theme -->
+    <link rel="stylesheet" href="../assets/css/chadev-theme.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/css/vendor/print/pdf.css' : '../assets/css/vendor/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Hide Play/Pause Controls -->
+    <style>.playback { display: none; }</style>
+
+  </head>
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide Markup -->
+        <section data-background-image="slides/title-slide.jpg" data-background-size="contain"></section>
+        <section data-background-image="slides/sponsor-info-coffee.jpg" data-background-size="contain"></section>
+        <section data-background-image="slides/sponsor-info-donuts.jpg" data-background-size="contain"></section>
+        <section data-background-image="slides/slack-info.jpg" data-background-size="contain"></section>
+        <section data-background-image="slides/community-events.jpg" data-background-size="contain"></section>
+        <section data-background-image="slides/cowork-graphic.jpg" data-background-size="contain"></section>
+        <!-- End -->
+
+      </div>
+    </div>
+
+    <script src="../assets/js/head.min.js"></script>
+    <script src="../assets/js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+
+      dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: '../assets/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interpret Markdown in <section> elements
+        { src: '../assets/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: '../assets/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        // Syntax highlight for <code> elements
+        { src: '../assets/js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        // Zoom in and out with Alt+click
+        { src: '../assets/js/plugin/zoom-js/zoom.js', async: true },
+
+        // Speaker notes
+        { src: '../assets/js/plugin/notes/notes.js', async: true },
+
+        // MathJax
+        { src: '../assets/js/plugin/math/math.js', async: true }
+      ],
+
+      // The "normal" size of the presentation, aspect ratio will be preserved
+      // when the presentation is scaled to fit different resolutions. Can be
+      // specified using percentage units.
+      width: 1920,
+      height: 1080,
+
+      // Factor of the display size that should remain empty around the content
+      margin: 0,
+
+      // Vertical centering of slides
+	    center: true,
+
+      // Display presentation control arrows
+	    controls: false,
+
+      // Display a presentation progress bar
+	    progress: false,
+
+      // Push each slide change to the browser history
+	    history: false,
+
+      // Transition style
+	    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Transition style for full page slide backgrounds
+	    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+      // Transition speed
+	    transitionSpeed: 'slow', // default/fast/slow
+
+      // Number of milliseconds between automatically proceeding to the
+      // next slide, disabled when set to 0, this value can be overwritten
+      // by using a data-autoslide attribute on your slides
+      autoSlide: 10000,
+
+      // Loop the presentation
+      loop: true,
+
+      // Stop auto-sliding after user input
+	    autoSlideStoppable: false,
+
+    });
+    </script>
+  </body>
+</html>
