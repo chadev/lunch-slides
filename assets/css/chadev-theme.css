@@ -142,7 +142,7 @@ body {
 /* Date List */
 .reveal .date-list__item {
   display: grid;
-  grid-template-columns: 2ch 1fr;
+  grid-template-columns: 7ch 1fr;
   grid-template-rows: min-content;
   grid-gap: 0 20px;
   grid-template-areas:
